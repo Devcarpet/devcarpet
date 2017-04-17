@@ -5,4 +5,5 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install python3-dev wget -y
+RUN cat /etc/hosts
 RUN apt-get install slapd -y                                                     
